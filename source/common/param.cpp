@@ -2010,7 +2010,7 @@ void x265_print_params(x265_param* param)
 char *x265_param2string(x265_param* p, int padx, int pady)
 {
     char *buf, *s;
-    size_t bufSize = 4000 + p->rc.zoneCount * 64;
+    size_t bufSize = 4000 + p->rc.zoneCount * 128;
     if (p->numaPools)
         bufSize += strlen(p->numaPools);
     if (p->masteringDisplayColorVolume)
